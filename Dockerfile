@@ -9,7 +9,7 @@ ENV FLASK_APP=hello.py
 
 COPY . . 
 
-CMD ["rm","-rf","Dockerfile"] 
+RUN rm -rf Dockerfile 
 
 EXPOSE 5000 
 
