@@ -9,6 +9,8 @@ ENV FLASK_APP=hello.py
 
 COPY . . 
 
+CMD ["rm","-rf","Dockerfile"] 
+
 EXPOSE 5000 
 
 ENTRYPOINT ["flask" , "run" ,"--host=0.0.0.0"]
